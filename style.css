@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+/* =========Background image style========= */
+.bg-hero {
+  width: 100%;
+  min-height: 100vh;
+  background: url("bg-img.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.login-container {
+  width: 300px;
+  min-height: 350px;
+  border: 2px solid white;
+  border-radius: 1rem;
+  padding: 2.5rem 1.5rem;
+  backdrop-filter: blur(8px);
+}
+.login-title {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.text-container,
+.password-container {
+  border-bottom: 2px solid white;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.password-container {
+  margin-top: 4rem;
+}
+.input-login {
+  width: 80%;
+  position: relative;
+  border: none;
+  background: none;
+  margin-left: 5px;
+}
+.login-label {
+  position: absolute;
+  left: 28px;
+  transition-property: font-size, bottom;
+  transition-duration: 3s;
+  z-index: -2;
+}
+.input-login:focus {
+  border: none;
+  outline: none;
+}
+.input-login:focus + .login-label {
+  bottom: 30px;
+  font-size: 0.9rem;
+}
+.links {
+  font-size: 0.7rem;
+  color: #fff;
+}
+.check {
+  margin-right: 1rem;
+}
+button {
+  margin: 2rem 0rem;
+  width: 100%;
+  height: 3rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+@media (min-width: 578px) {
+  .login-container {
+    width: 400px;
+  }
+  button {
+    padding: 1rem;
+  }
+  .bx {
+    font-size: 1.5rem;
+  }
+  .links {
+    font-size: 1rem;
+  }
+}
